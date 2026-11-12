@@ -1,0 +1,162 @@
+<!doctype html>
+<!-- code-ownership-navigator-generated -->
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Code Explorer · 내 코드 이해하기</title>
+<style>
+:root{color-scheme:light;--ink:#1b2733;--muted:#667788;--line:#e2e9ef;--bg:#f6f8fa;--paper:#fff;--blue:#2563eb;--pale:#edf4ff;--teal:#087b71;--dark:#102d45;--danger:#a35424;--shadow:0 6px 25px rgba(31,52,73,.06)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid #87b6ff;outline-offset:2px}.shell{max-width:1540px;margin:0 auto;padding:22px 25px 60px}.head{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px}.brandmark{display:grid;place-items:center;background:var(--dark);color:#fff;width:44px;height:44px;border-radius:14px;font-size:22px}.eyebrow{color:var(--teal);font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}h1{margin:0;font-size:24px;line-height:1.3}h2{font-size:18px;line-height:1.4;margin:0 0 10px}h3{font-size:15px;margin:0 0 6px}p{margin:4px 0 10px}.sub{color:var(--muted);font-size:13px}.top-meta{text-align:right;max-width:46%;font-size:12px;color:var(--muted)}.surface{background:var(--paper);border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow)}.hero{margin-top:22px;padding:20px 24px;display:flex;gap:20px;justify-content:space-between;align-items:center;background:linear-gradient(115deg,#edf8ff,#f2f9f4 80%)}.hero strong{font-size:18px}.hero p{font-size:13px;color:#4e687a;max-width:800px}.statbar{display:flex;flex-wrap:wrap;gap:9px}.stat{border-radius:11px;background:#fff;border:1px solid #dbe7ec;padding:8px 13px;min-width:92px;text-align:center}.stat b{font-size:20px;display:block;color:#20445c}.stat span{font-size:11px;color:var(--muted)}.layout{display:grid;grid-template-columns:228px minmax(0,1fr);gap:18px;margin-top:18px}.rail{padding:15px;align-self:start;position:sticky;top:14px}.nav{width:100%;text-align:left;border:0;background:transparent;color:#4c6275;padding:12px;border-radius:10px;margin-bottom:4px;font-weight:650}.nav.active,.nav:hover{background:var(--pale);color:#194fae}.nav .num{display:inline-block;width:27px;color:#90a0b0}.nav.active .num{color:var(--blue)}.rail-footer{border-top:1px solid var(--line);padding-top:14px;margin-top:14px;font-size:12px;color:var(--muted)}.main{min-width:0}.view{display:none}.view.active{display:block}.section{padding:22px;margin-bottom:16px}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:14px}.actions{display:flex;flex-wrap:wrap;gap:8px}.btn{border:1px solid var(--line);border-radius:9px;background:#fff;padding:9px 12px;font-size:12px;color:#334c62;font-weight:700}.btn:hover{border-color:#9dbbd8;background:#f1f6fc}.btn.primary{background:var(--dark);border-color:var(--dark);color:white}.hint{font-size:12px;color:var(--muted)}.pill{display:inline-block;background:#ecf5f1;color:#16615b;border-radius:99px;padding:3px 8px;font-size:11px;font-weight:700}.pill.warn{background:#fff5e5;color:#936016}.pill.gray{background:#f1f4f7;color:#607486}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:13px}.fact{padding:14px;border:1px solid var(--line);border-radius:11px;background:#fcfdff}.fact .k{font-size:11px;color:#68808b;letter-spacing:.02em}.fact .v{margin-top:4px;font-size:15px;font-weight:750}.list{display:grid;gap:8px}.item{border:1px solid var(--line);background:#fff;border-radius:10px;text-align:left;padding:11px 13px;width:100%}.item:hover,.item.selected{border-color:#80add8;background:#f2f7fd}.item strong{display:block;font-size:13px;word-break:break-word}.item small{color:var(--muted);display:block;margin-top:3px;font-size:11px;word-break:break-all}.item .right{float:right;color:var(--muted);font-size:11px}.mini{font-size:12px}.loc{font:12px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:#527289;overflow-wrap:anywhere}.columns{display:grid;grid-template-columns:minmax(210px, .75fr) minmax(0,1.4fr);gap:14px}.scrolllist{max-height:565px;overflow:auto;padding-right:3px}.diagramwrap{overflow:auto;border:1px solid var(--line);border-radius:12px;background:linear-gradient(#fff,#fafcff);min-height:180px}.diagramwrap svg{display:block;min-width:680px;width:100%;height:auto}.diagram-empty{text-align:center;padding:55px 10px;color:var(--muted)}.input{width:100%;border:1px solid #cedbe7;background:#fff;padding:11px 13px;border-radius:10px;color:var(--ink)}.searchbar{display:flex;gap:9px;align-items:center}.searchbar input{flex:1}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.muted{color:var(--muted)}.note{padding:12px 14px;border-left:3px solid #b9d6f0;background:#f4f9ff;border-radius:8px;font-size:12px;color:#52687c}.note.warn{background:#fff9ec;border-color:#f4d68b}.drawer{position:fixed;right:0;top:0;height:100vh;overflow:auto;width:min(550px,100vw);background:#fff;z-index:20;transform:translateX(104%);transition:transform .2s;border-left:1px solid #dbe4ec;box-shadow:-8px 0 34px #18324a1d;padding:24px}.drawer.open{transform:translateX(0)}.scrim{position:fixed;inset:0;background:rgba(12,28,41,.3);z-index:19;display:none}.scrim.show{display:block}.drawerheader{position:sticky;top:-24px;display:flex;align-items:center;justify-content:space-between;padding:14px 0 16px;background:white;z-index:1;border-bottom:1px solid var(--line);margin-bottom:17px}.drawer h2{font-size:20px;margin-top:4px;overflow-wrap:anywhere}.detailrow{margin:16px 0}.detailrow h3{font-size:12px;color:#62798b;margin-bottom:6px}.detailrow p{font-size:13px;overflow-wrap:anywhere}.chiplist{display:flex;gap:6px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:#f7fafc;border-radius:7px;padding:5px 7px;font:11px/1.3 ui-monospace,monospace;max-width:100%;word-break:break-all}.chip.clickable:hover{border-color:var(--blue);background:var(--pale)}.source{background:#172a3e;color:#e6eef7;border-radius:10px;padding:13px;overflow:auto;max-height:330px;font:11px/1.65 ui-monospace,Consolas,monospace;white-space:pre}.footer{text-align:center;color:#8495a4;font-size:12px;margin-top:32px}textarea{resize:vertical;min-height:105px}.smallcaps{text-transform:uppercase;letter-spacing:.09em;font-size:11px;color:#8298aa;font-weight:850}.sticky-note{margin-top:10px}.tagline{font-size:14px;color:#566e82}.kbd{background:#eaf1f5;border-radius:5px;padding:1px 5px;font:11px monospace}.counter{font-size:12px;color:var(--muted)}.scrolllist::-webkit-scrollbar,.drawer::-webkit-scrollbar{width:8px}.scrolllist::-webkit-scrollbar-thumb,.drawer::-webkit-scrollbar-thumb{background:#d5e0ea;border-radius:10px}
+@media(max-width:1000px){.layout{grid-template-columns:1fr}.rail{display:flex;position:static;gap:6px;overflow:auto}.nav{white-space:nowrap;padding:9px}.rail-footer{display:none}.hero{align-items:flex-start;flex-direction:column}.columns{grid-template-columns:1fr}.scrolllist{max-height:250px}.top-meta{display:none}}
+@media(max-width:650px){.shell{padding:14px 12px 40px}.hero{padding:16px}.section{padding:15px}.grid2{grid-template-columns:1fr}.brandmark{width:38px;height:38px}.brand h1{font-size:20px}.stat{min-width:80px}.sectionhead{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="shell">
+ <header class="head"><div class="brand"><div class="brandmark" aria-hidden="true">◎</div><div><div class="eyebrow">Visual Code Ownership</div><h1>내 코드 이해하기</h1></div></div><div class="top-meta" id="topmeta"></div></header>
+ <section class="hero surface"><div><div class="eyebrow">PROJECT OVERVIEW</div><strong id="project-name"></strong><p>코드를 전부 읽지 않아도 됩니다. 프로그램의 큰 그림부터 보고, 궁금한 기능을 클릭해서 함수와 실제 코드까지 내려가 보세요.</p><div class="hint" id="meta-warning"></div></div><div class="statbar" id="statbar"></div></section>
+ <div class="layout"><nav class="rail surface" aria-label="탐색 메뉴"><button class="nav active" data-tab="overview"><span class="num">01</span>전체 지도</button><button class="nav" data-tab="features"><span class="num">02</span>기능 흐름</button><button class="nav" data-tab="functions"><span class="num">03</span>함수 탐색</button><button class="nav" data-tab="impact"><span class="num">04</span>수정 영향</button><div class="rail-footer">🔒 이 화면은 오프라인 탐색용입니다. 코드를 변경하지 않습니다.<p>실제 수정은 AI에게 요청하고, 변경 계획을 승인한 뒤 진행하세요.</p></div></nav>
+ <main class="main">
+  <section class="view active" id="view-overview">
+   <article class="section surface"><div class="sectionhead"><div><div class="smallcaps">01 · 큰 그림</div><h2>프로그램은 어떻게 구성되어 있나요?</h2><p class="sub">파일의 역할과 코드 사이의 연결을 먼저 이해하세요.</p></div><button class="btn" id="handoff">새 AI 세션에 설명 복사</button></div><div class="grid2" id="summaryfacts"></div></article>
+   <article class="section surface"><div class="sectionhead"><div><h2>프로그램 시작 흐름</h2><p class="sub">탐지된 시작 함수의 정적 호출 관계입니다. 실제 실행 순서와 다를 수 있습니다.</p></div><span class="pill warn">호출 후보 시각화</span></div><div class="diagramwrap" id="overview-graph"></div><div class="hint sticky-note">각 상자를 클릭하면 함수 설명과 실제 코드 위치가 열립니다.</div></article>
+   <article class="section surface"><div class="sectionhead"><div><h2>파일과 모듈</h2><p class="sub">먼저 역할을 보고, 궁금한 파일을 클릭하세요.</p></div><span class="counter" id="file-counter"></span></div><div class="grid2" id="file-list"></div></article>
+  </section>
+  <section class="view" id="view-features">
+   <article class="section surface"><div class="smallcaps">02 · 동작 추적</div><h2>어떤 기능이 궁금하세요?</h2><p class="sub">주요 진입점·공개 함수 등을 자동으로 탐지한 목록입니다. 실제 기능 명칭은 코드에서 추가 확인하세요.</p><div class="columns"><div><input class="input" id="feature-query" placeholder="기능이나 파일 검색" aria-label="기능 검색"><div class="list scrolllist" id="feature-list" style="margin-top:10px"></div></div><div><div id="feature-intro" class="note"></div><div class="diagramwrap" id="feature-graph" style="margin-top:11px"></div><div class="hint sticky-note">화살표는 코드에서 관찰한 호출 후보이며 비동기·동적 호출은 누락될 수 있습니다.</div></div></div></article>
+  </section>
+  <section class="view" id="view-functions">
+   <article class="section surface"><div class="smallcaps">03 · 원하는 만큼 자세히</div><h2>함수를 검색하고 깊게 이해하기</h2><p class="sub">함수를 선택하면 역할, 입력과 관련된 코드, 호출 관계, 위치를 볼 수 있습니다.</p><div class="searchbar"><input class="input" id="function-query" placeholder="함수명, 파일 경로, 설명 검색" aria-label="함수 검색"><span class="counter" id="function-count"></span></div><div class="list scrolllist" id="function-list" style="margin-top:12px;max-height:700px"></div></article>
+  </section>
+  <section class="view" id="view-impact">
+   <article class="section surface"><div class="smallcaps">04 · 안전한 변경 준비</div><h2>어느 부분을 고치고 싶나요?</h2><p class="sub">변경할 함수를 선택하면 영향받는 다른 함수를 추적하고, AI에게 전달할 수정 요청을 만들 수 있습니다.</p><div class="columns"><div><input class="input" id="impact-query" placeholder="변경 대상 함수 검색" aria-label="변경 대상 검색"><div id="impact-list" class="list scrolllist" style="margin-top:10px"></div></div><div><div id="impact-heading" class="note">왼쪽 목록에서 기능 또는 함수를 선택하세요.</div><div class="diagramwrap" id="impact-graph" style="margin-top:10px"></div><div class="hint sticky-note">왼쪽 방향으로 펼쳐지는 연결은 이 함수를 호출할 수 있는 상위 함수 후보입니다.</div><label for="desired-change" style="display:block;font-weight:750;font-size:13px;margin-top:19px">어떻게 바꾸고 싶나요?</label><textarea class="input" id="desired-change" placeholder="예: 평균을 계산할 때 0인 값은 제외하고 싶어. 우선 영향을 설명해 줘."></textarea><div class="actions" style="margin-top:8px"><button class="btn primary" id="copy-change">AI 수정 요청 복사</button><button class="btn" id="copy-location">코드 위치 복사</button></div><div class="note warn sticky-note">HTML은 읽기 전용입니다. AI가 실제 소스를 다시 확인하고 변경 계획을 제안한 뒤, 승인받아 수정하도록 요청합니다.</div></div></div></article>
+  </section>
+ </main></div>
+ <footer class="footer">로컬에서 열리는 단일 HTML · 외부 서버·라이브러리·네트워크 연결 없음 · 정적 분석 결과는 실행 검증이 아님</footer>
+</div>
+<div id="scrim" class="scrim" role="presentation"></div><aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="코드 상세 정보" aria-hidden="true"><div class="drawerheader"><div class="smallcaps">코드 상세 보기</div><button class="btn" id="close-drawer">닫기 ✕</button></div><div id="drawer-content"></div></aside>
+<script>const PROJECT_DATA=/*__DATA__*/;</script>
+<script>
+(()=>{
+'use strict';
+const D=PROJECT_DATA,F=D.files,N=D.functions,E=D.features;
+const $=id=>document.getElementById(id);
+const esc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let tab='overview', chosenFeature=E[0]?.id??null, chosenImpact=N[0]?.id??null;
+const fmt=(n)=>Number(n).toLocaleString('ko-KR');
+const limit=(s,n=34)=>String(s||'').length>n?String(s).slice(0,n-1)+'…':String(s||'');
+const pathOf=id=>F[id]?.path||'파일 위치 미확인';
+const loc=n=>`${pathOf(n.file)}:${n.line}`;
+const desc=n=>n.summary||'코드에서 설명문을 찾지 못했습니다. 실제 구현과 호출 관계를 확인하세요.';
+const roleColor=r=>r.includes('UI')?'#6366f1':r.includes('시작')?'#087b71':r.includes('API')?'#2563eb':r.includes('테스트')?'#986c39':'#536e82';
+function switchTab(name){tab=name;document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('active',x.dataset.tab===name));document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id==='view-'+name));}
+document.querySelectorAll('[data-tab]').forEach(x=>x.addEventListener('click',()=>switchTab(x.dataset.tab)));
+function fillMeta(){
+ $('project-name').textContent=D.meta.name;
+ $('topmeta').textContent=`기준 ${D.meta.generated} · Git ${D.meta.commit} · ${D.meta.workingTree}`;
+ $('meta-warning').textContent='프로젝트를 다시 수정했다면 HTML도 다시 생성해야 최신 분석을 볼 수 있습니다.';
+ $('statbar').innerHTML=[['분석 파일',F.length],['함수 후보',N.length],['주요 기능 후보',E.length]].map(([k,v])=>`<div class="stat"><b>${fmt(v)}</b><span>${k}</span></div>`).join('');
+ const roles=[...new Set(F.map(x=>x.role))];
+ const langs=[...new Set(F.map(x=>x.language))];
+ $('summaryfacts').innerHTML=`<div class="fact"><div class="k">주요 기술</div><div class="v">${esc(langs.slice(0,6).join(' · ')||'미분류')}</div></div><div class="fact"><div class="k">역할별 모듈</div><div class="v">${fmt(roles.length)}개 유형</div></div><div class="fact"><div class="k">Git 기준</div><div class="v">${esc(D.meta.commit)}</div></div><div class="fact"><div class="k">분석 신뢰도</div><div class="v">Python AST · 기타 언어 휴리스틱</div></div>`;
+ let warn=D.meta.skipped?`크기·수량 제한으로 ${D.meta.skipped}개 파일 제외. `:'';
+ warn+=D.warnings.length?`파싱 경고 ${D.warnings.length}개. `:'';
+ warn+=D.meta.codeIncluded?'발췌 코드에는 민감정보 탐지 줄을 숨김 처리했습니다.':'코드 발췌 비활성화 상태입니다.';
+ $('meta-warning').textContent=warn;
+}
+function fileButton(f){return `<button class="item" data-file="${f.id}"><span class="pill gray">${esc(f.role)}</span><strong>${esc(f.path)}</strong><small>${esc(f.language)} · ${fmt(f.lines)}줄 · 함수 ${fmt(f.functions.length)}개 · 참조 ${fmt(f.imports.length)}개</small></button>`}
+function renderFiles(){
+ const priority=[...F].sort((a,b)=>{const score=x=>(x.role==='시작 지점 후보'?4:0)+(x.role.includes('API')?2:0)+(x.functions.length>0?1:0);return score(b)-score(a)||b.functions.length-a.functions.length;});
+ $('file-list').innerHTML=priority.slice(0,90).map(fileButton).join('');
+ $('file-counter').textContent=F.length>90?`우선 90개 / 전체 ${fmt(F.length)}개`:`${fmt(F.length)}개`;
+}
+function renderList(q,list,kind,max=200){
+ const v=q.trim().toLowerCase();let found=N.filter(n=>!v||(`${n.qual} ${pathOf(n.file)} ${n.summary||''}`).toLowerCase().includes(v));
+ if(kind==='impact'){const ranked=found.sort((a,b)=>(b.calledBy.length+b.calls.length)-(a.calledBy.length+a.calls.length));found=ranked.slice(0,max)}
+ else found=found.slice(0,max);
+ $(list).innerHTML=found.map(n=>`<button class="item ${kind==='impact'&&chosenImpact===n.id?'selected':''}" data-fn="${n.id}" data-kind="${kind}"><span class="right">${n.calledBy.length}↑ ${n.calls.length}↓</span><strong>${esc(n.qual)}</strong><small>${esc(loc(n))} · ${esc(F[n.file].language)}</small></button>`).join('')||'<div class="note">검색 결과가 없습니다.</div>';
+ if(kind==='functions')$('function-count').textContent=`${fmt(found.length)}개 표시 / 전체 ${fmt(N.length)}개`;
+}
+function renderFeatures(){
+ const q=$('feature-query').value.trim().toLowerCase();
+ const filtered=E.filter(e=>{const n=N[e.fn];return !q||`${e.title} ${pathOf(n.file)} ${e.summary||''}`.toLowerCase().includes(q)});
+ $('feature-list').innerHTML=filtered.map(e=>`<button class="item ${chosenFeature===e.id?'selected':''}" data-feature="${e.id}"><span class="pill">${esc(e.kind)}</span><strong>${esc(e.title)}</strong><small>${esc(pathOf(N[e.fn].file))}</small></button>`).join('')||'<div class="note">기능 후보가 없습니다.</div>';
+ const selected=E.find(e=>e.id===chosenFeature)||filtered[0];
+ if(!selected){$('feature-intro').textContent='아직 분석된 기능이 없습니다.';$('feature-graph').innerHTML='<div class="diagram-empty">표시할 호출 관계 없음</div>';return;}
+ const fn=N[selected.fn];
+ $('feature-intro').innerHTML=`<b>${esc(selected.title)}</b> <span class="pill gray">${esc(selected.kind)}</span><br>${esc(selected.summary)}<div class="loc">${esc(loc(fn))}</div><div class="hint">${esc(selected.evidence)}</div>`;
+ drawGraph('feature-graph',fn.id,false);
+}
+function getGraph(root,reverse=false){
+ if(root==null||!N[root])return {nodes:[],edges:[]};
+ const levels=new Map([[root,0]]),q=[root], edges=[];
+ for(let ix=0;ix<q.length&&levels.size<22;ix++){
+  const id=q[ix],lev=levels.get(id);
+  if(lev>=3)continue;
+  for(const next of (reverse?N[id].calledBy:N[id].calls).slice(0,12)){
+   if(!levels.has(next)&&levels.size<22){levels.set(next,lev+1);q.push(next)}
+  }
+ }
+ for(const [id,lev] of levels){for(const next of reverse?N[id].calledBy:N[id].calls){if(levels.has(next)&&levels.get(next)===lev+1)edges.push({a:id,b:next});}}
+ return {nodes:[...levels].map(([id,level])=>({id,level})),edges};
+}
+function drawGraph(el,root,reverse){
+ const target=$(el),graph=getGraph(root,reverse);
+ if(!graph.nodes.length){target.innerHTML='<div class="diagram-empty">연결 정보를 찾지 못했습니다.</div>';return;}
+ const ns='http://www.w3.org/2000/svg',w=880,colW=255,boxW=218,boxH=74,top=44;
+ const layers=new Map();for(const node of graph.nodes){if(!layers.has(node.level))layers.set(node.level,[]);layers.get(node.level).push(node)}
+ const rows=Math.max(...[...layers.values()].map(a=>a.length));const h=Math.max(240,top+rows*100+22);
+ const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.setAttribute('role','img');svg.setAttribute('aria-label','함수 호출 관계 그래프. 각 노드는 클릭해서 상세보기');
+ const defs=document.createElementNS(ns,'defs'),marker=document.createElementNS(ns,'marker');marker.setAttribute('id','arrow-'+el);marker.setAttribute('viewBox','0 0 10 10');marker.setAttribute('refX','9');marker.setAttribute('refY','5');marker.setAttribute('markerWidth','7');marker.setAttribute('markerHeight','7');marker.setAttribute('orient','auto-start-reverse');const arrow=document.createElementNS(ns,'path');arrow.setAttribute('d','M0 0 L10 5 L0 10 Z');arrow.setAttribute('fill','#a8c1d4');marker.appendChild(arrow);defs.appendChild(marker);svg.appendChild(defs);
+ const point=new Map();for(const [layer,arr] of layers){arr.forEach((node,i)=>point.set(node.id,{x:24+layer*colW,y:top+i*100+(rows-arr.length)*50}));}
+ for(const e of graph.edges){const a=point.get(e.a),b=point.get(e.b);if(!a||!b)continue;const line=document.createElementNS(ns,'path');const from=reverse?b:a,to=reverse?a:b;line.setAttribute('d',`M${from.x+boxW},${from.y+boxH/2} C${from.x+boxW+22},${from.y+boxH/2} ${to.x-22},${to.y+boxH/2} ${to.x-3},${to.y+boxH/2}`);line.setAttribute('fill','none');line.setAttribute('stroke','#b5cadb');line.setAttribute('stroke-width','2');line.setAttribute('marker-end',`url(#arrow-${el})`);svg.appendChild(line)}
+ for(const node of graph.nodes){const n=N[node.id],p=point.get(node.id),group=document.createElementNS(ns,'g');group.setAttribute('tabindex','0');group.setAttribute('role','button');group.setAttribute('aria-label',n.qual+' 상세 보기');group.style.cursor='pointer';const rect=document.createElementNS(ns,'rect');rect.setAttribute('x',p.x);rect.setAttribute('y',p.y);rect.setAttribute('width',boxW);rect.setAttribute('height',boxH);rect.setAttribute('rx','13');rect.setAttribute('fill',node.level===0?'#e7f5f0':'#fff');rect.setAttribute('stroke',node.level===0?'#69b4a8':'#cbdce9');rect.setAttribute('stroke-width','1.4');group.appendChild(rect);
+ const txt=(t,x,y,sz,bold,col)=>{const e=document.createElementNS(ns,'text');e.setAttribute('x',x);e.setAttribute('y',y);e.setAttribute('font-size',sz);e.setAttribute('font-weight',bold?'700':'500');e.setAttribute('fill',col);e.textContent=t;group.appendChild(e)};
+ txt(limit(n.qual,26),p.x+12,p.y+25,13,true,'#213e52');txt(limit(pathOf(n.file),29),p.x+12,p.y+48,10,false,'#70899a');
+ const title=document.createElementNS(ns,'title');title.textContent=loc(n);group.appendChild(title);
+ const open=()=>openFunction(n.id);group.addEventListener('click',open);group.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});svg.appendChild(group)}
+ target.replaceChildren(svg);
+}
+function renderImpact(){renderList($('impact-query').value,'impact-list','impact');if(chosenImpact==null||!N[chosenImpact])return;
+ const n=N[chosenImpact],roots=n.calledBy.length; $('impact-heading').innerHTML=`<b>${esc(n.qual)}</b><div class="loc">${esc(loc(n))}</div><div class="hint">이 함수로 연결되는 상위 함수 후보 ${fmt(roots)}개 · 이 함수가 직접 호출하는 함수 후보 ${fmt(n.calls.length)}개</div>`;
+ drawGraph('impact-graph',n.id,true);
+}
+function chipFunctions(ids){return ids.length?ids.slice(0,35).map(id=>`<button class="chip clickable" data-fn="${id}" data-kind="detail">${esc(N[id]?.qual||'#'+id)}</button>`).join(''):'<span class="muted mini">정적으로 확인된 관계 없음</span>'}
+function openFunction(id){const n=N[id];if(!n)return;const file=F[n.file];
+ const lines=n.code?.map(x=>`${String(x.n).padStart(4,' ')} │ ${x.t}`).join('\n')||'';
+ $('drawer-content').innerHTML=`<span class="pill ${n.kind==='python-ast'?'':'warn'}">${n.kind==='python-ast'?'Python AST 확인':'추정 분석 · 확인 필요'}</span><h2>${esc(n.qual)}</h2><p class="sub">${esc(file.language)} · ${esc(file.role)}</p>
+ <div class="detailrow"><h3>어디에 있나요?</h3><div class="loc">${esc(file.path)}:${n.line}–${n.end}</div><button class="btn" id="copy-detail-path" style="margin-top:9px">이 위치 복사</button></div>
+ <div class="detailrow"><h3>무엇을 하나요?</h3><p>${esc(desc(n))}</p><div class="note">설명문이 없는 함수는 이름과 호출 관계만으로 역할이 확정되지 않습니다. 실제 코드와 테스트로 확인하세요.</div></div>
+ <div class="detailrow"><h3>함수 선언부</h3><div class="chip">${esc(n.signature||n.qual)}</div></div>
+ <div class="detailrow"><h3>이 함수를 사용하는 곳 · 상위 호출 후보</h3><div class="chiplist">${chipFunctions(n.calledBy)}</div></div>
+ <div class="detailrow"><h3>이 함수가 호출하는 곳 · 하위 호출 후보</h3><div class="chiplist">${chipFunctions(n.calls)}</div></div>
+ <div class="detailrow"><h3>정적 호출 해석에 포함되지 않은 이름</h3><div class="mini muted">${esc(n.callsRaw.slice(0,25).filter(x=>!n.calls.some(i=>N[i]?.name===x.split('.').pop())).join(' · ')||'없거나 알 수 없음')}</div></div>
+ <div class="detailrow"><h3>실제 코드 발췌 ${n.code?.length?'(앞부분만)':''}</h3>${lines?`<pre class="source">${esc(lines)}</pre>`:'<div class="note">코드 발췌 비활성화 또는 내용 없음. 실제 파일 위치에서 확인하세요.</div>'}</div>
+ <div class="actions"><button class="btn primary" id="impact-this">이 함수를 수정하고 싶어요</button></div>`;
+ $('scrim').classList.add('show');$('drawer').classList.add('open');$('drawer').setAttribute('aria-hidden','false');$('close-drawer').focus();
+ $('copy-detail-path').onclick=()=>copyText(loc(n),'copy-detail-path');
+ $('impact-this').onclick=()=>{closeDrawer();chosenImpact=n.id;switchTab('impact');renderImpact()};
+}
+function openFile(id){const f=F[id];if(!f)return;
+ $('drawer-content').innerHTML=`<span class="pill gray">${esc(f.role)}</span><h2>${esc(f.path)}</h2><div class="detailrow"><h3>파일 특징</h3><p>${esc(f.language)} · ${fmt(f.lines)}줄 · 내용 해시 ${esc(f.sha)}</p><p>${esc(f.notes||'파일명과 디렉터리 패턴으로 역할을 분류했습니다. 실제 역할은 코드를 확인하세요.')}</p></div><div class="detailrow"><h3>가져오는 프로젝트 내 파일 후보</h3><div class="chiplist">${f.imports.length?f.imports.map(id=>`<button class="chip clickable" data-file="${id}">${esc(pathOf(id))}</button>`).join(''):'<span class="muted mini">확인된 내부 참조 없음</span>'}</div></div><div class="detailrow"><h3>찾은 함수</h3><div class="chiplist">${f.functions.length?chipFunctions(f.functions):'<span class="muted mini">정적 함수 탐지 결과 없음</span>'}</div></div>`;
+ $('scrim').classList.add('show');$('drawer').classList.add('open');$('drawer').setAttribute('aria-hidden','false');$('close-drawer').focus();
+}
+function closeDrawer(){$('scrim').classList.remove('show');$('drawer').classList.remove('open');$('drawer').setAttribute('aria-hidden','true');}
+$('close-drawer').onclick=closeDrawer;$('scrim').onclick=closeDrawer;document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
+document.addEventListener('click',e=>{const file=e.target.closest('[data-file]'),fn=e.target.closest('[data-fn]'),feat=e.target.closest('[data-feature]');if(file){openFile(Number(file.dataset.file));return}if(fn){const id=Number(fn.dataset.fn);if(fn.dataset.kind==='impact'){chosenImpact=id;renderImpact()}else openFunction(id);return}if(feat){chosenFeature=Number(feat.dataset.feature);renderFeatures();return}});
+function handoff(){
+ const major=F.slice().sort((a,b)=>b.functions.length-a.functions.length).slice(0,16).map(f=>`- ${f.path}: ${f.role}, 함수 ${f.functions.length}개`).join('\n');
+ return `새 AI 코딩 세션을 위한 프로젝트 요약\n프로젝트: ${D.meta.name}\nHTML 생성 기준: ${D.meta.generated}; Git: ${D.meta.commit} (${D.meta.workingTree})\n가장 중요한 주의: 이 내용은 정적 분석으로 만든 잠정 지도이며, 반드시 최신 소스 코드와 맞는지 확인해 주세요.\n분석된 주요 파일:\n${major}\n작업 절차: 1) 저장소 최신 코드 확인 2) 관련 코드 경로 및 실행 흐름 설명 3) 변경 영향/검증 계획 먼저 제안 4) 사용자가 승인한 뒤 수정 5) 테스트 결과 보고 및 code-explorer.html 갱신.\n보조 자료: 같은 프로젝트의 code-explorer.html 을 참고하세요. HTML은 실행 코드의 대체물이 아닙니다.`;
+}
+function impactPrompt(){const n=N[chosenImpact],wish=$('desired-change').value.trim()||'(수정 의도를 먼저 질문해 주세요)';return `프로젝트에서 다음 기능을 바꾸고 싶습니다. 먼저 이해하기 쉽게 설명하고, 수정 계획을 제시하세요. 제가 승인하기 전까지 파일을 변경하지 마세요.\n\n프로젝트: ${D.meta.name}\n분석 시점 Git: ${D.meta.commit}\n관련 함수 후보: ${n?`${n.qual} (${loc(n)})`:'미선택'}\n원하는 변경: ${wish}\n\n확인할 사항: 최신 소스와 HTML 분석 내용 일치 여부, 현재 실행/데이터 흐름, 최소 수정 지점, 호출하는 곳과 영향을 받는 곳, 위험과 테스트 방법.\n이후 승인 시 코드 수정·검증을 수행하고 최종 code-explorer.html 한 파일만 갱신해 주세요. HTML의 정적 분석은 실제 실행과 다를 수 있습니다.`}
+async function copyText(text,btn){
+ let ok=false;try{await navigator.clipboard.writeText(text);ok=true}catch(e){}
+ if(!ok){const inp=document.createElement('textarea');inp.value=text;inp.style.position='fixed';inp.style.left='-9999px';document.body.appendChild(inp);inp.select();try{ok=document.execCommand('copy')}catch(e){}inp.remove()}
+ const b=$(btn);if(b){const original=b.textContent;b.textContent=ok?'복사 완료':'복사 실패 · 텍스트 선택 필요';setTimeout(()=>b.textContent=original,2200)}
+}
+$('handoff').onclick=()=>copyText(handoff(),'handoff');$('copy-change').onclick=()=>copyText(impactPrompt(),'copy-change');$('copy-location').onclick=()=>copyText(N[chosenImpact]?loc(N[chosenImpact]):'선택된 함수 없음','copy-location');
+$('feature-query').oninput=renderFeatures;$('function-query').oninput=()=>renderList($('function-query').value,'function-list','functions');$('impact-query').oninput=renderImpact;
+fillMeta();renderFiles();renderFeatures();renderList('','function-list','functions');renderImpact();if(E.length)drawGraph('overview-graph',E[0].fn,false);else $('overview-graph').innerHTML='<div class="diagram-empty">진입 함수 후보를 찾지 못했습니다. 함수 탐색에서 시작해 보세요.</div>';
+})();
+</script>
+</body></html>
